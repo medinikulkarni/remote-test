@@ -1,0 +1,17 @@
+dependencies {
+    compile project(':domain')
+
+    implementation "org.glassfish.jersey.core:jersey-client:${jerseyVersion}"
+    implementation "org.glassfish.jersey.media:jersey-media-json-jackson:${jerseyVersion}"
+    implementation("org.glassfish.jersey.inject:jersey-hk2:${jerseyVersion}") {
+        exclude group: 'org.glassfish.hk2.external', module: 'javax.inject'
+    }
+    implementation "io.github.resilience4j:resilience4j-circuitbreaker:${resilience4jVersion}"
+    implementation "org.springframework.boot:spring-boot-starter:2.2.5.RELEASE" //TODO
+    implementation "org.springframework.boot:spring-boot-starter-web:2.2.5.RELEASE" //TODO
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testImplementation "org.mockito:mockito-core:${mockitoVersion}"
+    testImplementation "org.mockito:mockito-junit-jupiter:${mockitoVersion}"
+    testImplementation "org.assertj:assertj-core:${assertjCoreVersion}"
+}

@@ -1,0 +1,43 @@
+## Intellij project files ##
+*.iml
+*.ipr
+*.iws
+.idea/
+/build-info.properties
+
+## Ignore VS Code generated files (JLS files) ##
+.project
+.settings
+.classpath
+.vscode
+.history
+bin
+
+## Gradle ##
+.gradletasknamecache
+.gradle/
+build/
+classes/
+bin/
+
+/cdc/cdc-test/target/
+**/out/**/*
+
+# Java class files
+*.class
+
+/*/application.properties
+/*/application.yaml
+/*/*/application.properties
+/logs/
+/*/logs/
+/*/connection.properties
+application.pid
+cdc-test/target
+service/out
+integration-test/out
+
+.DS_Store
+
+## To make docker work locally atm, you need to copy the application.properties file into the docker directory
+application/src/main/docker/application.properties
