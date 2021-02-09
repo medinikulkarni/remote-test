@@ -14,6 +14,11 @@ To test the application via the command line - `./gradlew test`
 * JUnit 5
 * Gradle 6
 
+## Things wanted to do but could not complete within time limit
+Resilience
+Contract Driven Tests
+Integration Tests
+
 ## Endpoint
 `GET request - http://localhost:8080/product/search?labelType=SHOW_WAS_THEN_NOW`
 default labelType = SHOW_WAS_NOW
